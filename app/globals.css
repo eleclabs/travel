@@ -939,6 +939,18 @@ body,
   background: #7c3aed;
 }
 
+.home-hero h1,
+.home-hero p,
+.dashboard-hero h1,
+.dashboard-hero p {
+  color: white;
+}
+
+.home-hero .eyebrow,
+.dashboard-hero .eyebrow {
+  color: #fbcfe8;
+}
+
 .eyebrow,
 .auth-card a,
 .card-link,
@@ -1023,4 +1035,9 @@ body,
 
 .member-card:hover {
   border-color: #db2777;
+}
+
+.profile-status-row,
+.member-title {
+  color: #352044;
 }

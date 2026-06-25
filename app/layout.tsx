@@ -6,8 +6,9 @@ import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
 
 export const metadata: Metadata = {
-  title: "Travel Community",
-  description: "ชุมชนสำหรับหางาน นายจ้าง เพื่อนเที่ยว และเพื่อนคุย",
+  title: "GoMate — หาเพื่อนที่ใช่สำหรับทุกกิจกรรม",
+  description:
+    "ชุมชนหาเพื่อนเที่ยว เพื่อนกิน เพื่อนออกกำลังกาย เพื่อนร่วมงาน เพื่อนคุย และเพื่อนร่วมกิจกรรม",
 };
 
 export default async function RootLayout({

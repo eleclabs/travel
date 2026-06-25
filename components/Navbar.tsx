@@ -22,7 +22,7 @@ export default function Navbar({ user }: { user: NavbarUser }) {
     <nav className="navbar">
       <div className="container">
         <Link href="/" className="logo" onClick={() => setOpen(false)}>
-          TRAVEL
+          GoMate
         </Link>
         <button
           className="menu-btn"

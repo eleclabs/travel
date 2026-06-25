@@ -1,11 +1,15 @@
 import mongoose, { Schema, models } from "mongoose";
 
 export const PROFILE_TYPES = [
-  "job_seeker",
-  "employer",
   "travel_friend",
+  "dining_friend",
+  "fitness_friend",
+  "coworking_friend",
   "chat_friend",
+  "activity_friend",
 ] as const;
+
+const LEGACY_PROFILE_TYPES = ["job_seeker", "employer"] as const;
 
 const UserSchema = new Schema(
   {
@@ -23,7 +27,7 @@ const UserSchema = new Schema(
     province: { type: String, default: "", trim: true },
     profileType: {
       type: String,
-      enum: PROFILE_TYPES,
+      enum: [...PROFILE_TYPES, ...LEGACY_PROFILE_TYPES],
       default: "chat_friend",
     },
     skills: { type: [String], default: [] },
